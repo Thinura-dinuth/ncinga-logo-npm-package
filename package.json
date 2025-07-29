@@ -1,0 +1,44 @@
+{
+  "name": "ncinga-logo",
+  "version": "1.0.1",
+  "description": "Ncinga Logo Animation React Component",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "public"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "encode-gif": "node scripts/encode-gif.js",
+    "build": "npm run encode-gif && tsc",
+    "clean": "if exist dist rmdir /S /Q dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thinura-dinuth/ncinga-logo-npm-package.git"
+  },
+  "keywords": [
+    "ncinga"
+  ],
+  "author": "Dev-Thinura-Jayathunga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thinura-dinuth/ncinga-logo-npm-package/issues"
+  },
+  "homepage": "https://github.com/Thinura-dinuth/ncinga-logo-npm-package#readme",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "typescript": "^5.8.3"
+  }
+}
